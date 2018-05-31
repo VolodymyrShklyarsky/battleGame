@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.effect.Lighting?>
+<?import javafx.scene.effect.Shadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="674.0" prefWidth="729.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.epam.labs.massacre.main.MainController">
+  <children>
+    <Label layoutX="159.0" layoutY="14.0" prefHeight="41.0" prefWidth="411.0" text="Massacre on a Tomb World" textAlignment="CENTER">
+      <font>
+        <Font name="Old English Text MT" size="36.0" />
+      </font>
+    </Label>
+    <TextField fx:id="armySize" layoutX="195.0" layoutY="64.0" prefHeight="25.0" prefWidth="200.0" />
+    <Button layoutX="414.0" layoutY="64.0" mnemonicParsing="false" onAction="#start" prefHeight="25.0" prefWidth="120.0" text="Enter army size" />
+    <TextField fx:id="result" layoutX="194.0" layoutY="352.0" prefHeight="34.0" prefWidth="342.0" />
+    <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="50.0" layoutY="130.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="38.00971221923828" AnchorPane.rightAnchor="577.9902877807617">
+      <image>
+        <Image url="@images/necron.jpg" />
+      </image>
+      <effect>
+        <Lighting>
+          <bumpInput>
+            <Shadow />
+          </bumpInput>
+        </Lighting>
+      </effect>
+    </ImageView>
+    <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="580.0" layoutY="130.0" pickOnBounds="true" preserveRatio="true">
+      <image>
+        <Image url="@images/ork.jpg" />
+      </image>
+      <effect>
+        <Glow />
+      </effect>
+    </ImageView>
+    <TextArea fx:id="output" layoutX="193.0" layoutY="112.0" prefHeight="214.0" prefWidth="342.0" />
+    <Label layoutX="15.0" layoutY="285.0" prefHeight="32.0" prefWidth="174.0" text="NECRONS">
+      <font>
+        <Font name="Matura MT Script Capitals" size="22.0" />
+      </font>
+    </Label>
+    <Label layoutX="577.0" layoutY="293.0" prefHeight="35.0" prefWidth="120.0" text="oRKS">
+      <font>
+        <Font name="Goudy Stout" size="22.0" />
+      </font>
+    </Label>
+    <Label layoutX="250.0" layoutY="405.0" prefHeight="32.0" prefWidth="234.0" text="Weapon Statistics">
+      <font>
+        <Font name="Algerian" size="24.0" />
+      </font>
+    </Label>
+    <TextArea fx:id="statistics" layoutX="236.0" layoutY="437.0" prefHeight="214.0" prefWidth="260.0" />
+  </children>
+</AnchorPane>

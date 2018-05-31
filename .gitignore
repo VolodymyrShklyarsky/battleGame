@@ -1,0 +1,14 @@
+# IDEA
+.idea
+*.iml
+
+# Eclipse
+.classpath
+.project
+.settings/
+.cache-main
+.cache-tests
+
+# Maven
+target/
+dependency-reduced-pom.xml
